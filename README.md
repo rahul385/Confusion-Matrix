@@ -51,7 +51,7 @@ sns.heatmap(matrix1, annot=labels, fmt='', cmap='Blues')
 ***Screenshot 2:Heatmap with percentages***
 ![Screenshot 2](https://github.com/rahul385/Confusion-Matrix/blob/master/Visualizations/Heatmap_with_Percentages.png)
 
-## Licensing, Authors, Acknowledgements
+## Licensing, Authors, Acknowledgements <a name="licensing"></a>
 Author: Rahul Gupta Copyright 2020
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
