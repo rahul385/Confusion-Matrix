@@ -12,6 +12,9 @@ Here is the link to my blog post that describes different aspects of Confusion M
 [Confusion Matrix](https://rahulgupta1.medium.com/confusion-matrix-in-machine-learning-d15040776893)
 
 ## Sample Code <a name="code"></a>
+
+A Confusion Matrix is an N x N matrix used for evaluating the performance of a classification model, where N is the number of target classes. The matrix compares the actual target values with those predicted by the machine learning model. This gives us a holistic view of how well our classification model is performing and what kinds of errors it is making.
+
 ```
 # confusion matrix in sklearn
 from sklearn.metrics import confusion_matrix
@@ -46,9 +49,11 @@ sns.heatmap(matrix1, annot=labels, fmt='', cmap='Blues')
 ## Visualizations <a name="image"></a>
 
 ***Screenshot 1:Heatmap with Labels***
+
 ![Screenshot 1](https://github.com/rahul385/Confusion-Matrix/blob/master/Visualizations/Heatmap_with_Labels.png)
 
 ***Screenshot 2:Heatmap with percentages***
+
 ![Screenshot 2](https://github.com/rahul385/Confusion-Matrix/blob/master/Visualizations/Heatmap_with_Percentages.png)
 
 ## Licensing, Authors, Acknowledgements <a name="licensing"></a>
