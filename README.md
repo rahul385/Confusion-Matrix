@@ -34,7 +34,7 @@ tp, fn, fp, tn = confusion_matrix(actual,predicted,labels=[1,0]).reshape(-1)
 print('Outcome values : \n', tp, fn, fp, tn)
 
 # classification report for precision, recall f1-score and accuracy
-matrix = classification_report(actual,predicted,labels=[1,0])
+matrix1 = classification_report(actual,predicted,labels=[1,0])
 print('Classification report : \n',matrix)
 
 # Making a heatmap with percentages
