@@ -12,8 +12,13 @@ Here is the link to my blog post that describes different aspects of Confusion M
 [Confusion Matrix](https://rahulgupta1.medium.com/confusion-matrix-in-machine-learning-d15040776893)
 
 ## Sample Code <a name="code"></a>
+
+A Confusion Matrix is an N x N matrix used for evaluating the performance of a classification model, where N is the number of target classes. The matrix compares the actual target values with those predicted by the machine learning model. This gives us a holistic view of how well our classification model is performing and what kinds of errors it is making.
+
 ```
-# confusion matrix in sklearn
+import seaborn as sns
+import numpy as np
+import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report
 
@@ -31,24 +36,29 @@ tp, fn, fp, tn = confusion_matrix(actual,predicted,labels=[1,0]).reshape(-1)
 print('Outcome values : \n', tp, fn, fp, tn)
 
 # classification report for precision, recall f1-score and accuracy
-matrix = classification_report(actual,predicted,labels=[1,0])
+matrix1 = classification_report(actual,predicted,labels=[1,0])
 print('Classification report : \n',matrix)
 
+
 # Making a heatmap with percentages
-sns.heatmap(matrix1/np.sum(matrix1), annot=True,fmt='.2%', cmap='Blues')
+plt.subplot(2,1,1)
+sns.heatmap(matrix/np.sum(matrix), annot=True,fmt='.2%', cmap='Blues');
 
 # Making a heatmap with labels
+plt.subplot(2,1,2)
 labels = ['True Neg','False Pos','False Neg','True Pos']
 labels = np.asarray(labels).reshape(2,2)
-sns.heatmap(matrix1, annot=labels, fmt='', cmap='Blues')
+sns.heatmap(matrix, annot=labels, fmt='', cmap='Blues');
 ```
 
 ## Visualizations <a name="image"></a>
 
 ***Screenshot 1:Heatmap with Labels***
+
 ![Screenshot 1](https://github.com/rahul385/Confusion-Matrix/blob/master/Visualizations/Heatmap_with_Labels.png)
 
 ***Screenshot 2:Heatmap with percentages***
+
 ![Screenshot 2](https://github.com/rahul385/Confusion-Matrix/blob/master/Visualizations/Heatmap_with_Percentages.png)
 
 ## Licensing, Authors, Acknowledgements <a name="licensing"></a>
