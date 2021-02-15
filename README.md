@@ -1,5 +1,7 @@
 # Confusion-Matrix
 
+<p align = 'center'><img src = 'logo.png', height=300, width =300></p>
+
 ### Table of Contents
 1. [Blog Post](#Blog_Post)
 2. [Sample Code](#code)
