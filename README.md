@@ -53,7 +53,7 @@ labels = np.asarray(labels).reshape(2,2)
 sns.heatmap(matrix, annot=labels, fmt='', cmap='Blues');
 ```
 
-## Visualizations <a name="image"></a>
+## Screesnshots <a name="image"></a>
 
 ***Screenshot 1:Heatmap with Labels***
 
